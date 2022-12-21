@@ -1,0 +1,36 @@
+@use "./base" as *;
+
+body {
+  padding: 20px 10px;
+
+  header {
+    margin-bottom: 20px;
+  }
+}
+
+.hero-img {
+  margin-bottom: 20px;
+}
+
+.main-article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr 1fr);
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  button {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $neutral-100;
+    background-color: $primary-400;
+    border-color: transparent;
+    padding: 10px 30px;
+  }
+}

@@ -8,26 +8,53 @@
   
   <title>Frontend Mentor | News homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <header>
+    <nav>
+      <a href="#" aria-label="Home page">
+        <img src="./assets/images/logo.svg" alt="Company's logo">
+      </a>
+      <button>
+        <img src="./assets/images/icon-menu.svg" alt="open menu">
+      </button>
+      <button class="hidden">
+        <img src="./assets/images/icon-menu-close.svg" alt="close menu" >
+      </button>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  The Bright Future of Web 3.0?
+  <main>
+    <div class="grid-container">
+      <div class="hero-img">
+        <picture>
+          <source media="(min-width:680px)" srcset="./assets/images/image-web-3-desktop.jpg">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+        </picture>
+      </div>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+      <section class="main-article">
+        <h1>The Bright Future of Web 3.0?</h1>
+        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+        <button>Read more</button>
+      </section>
+    </div>
+  </main>
 
-  Read more
+  
+
+  
+
+  
 
   New 
 

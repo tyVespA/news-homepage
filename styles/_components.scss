@@ -1,0 +1,19 @@
+@use "./base";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  
+  button {
+    background-color: transparent;
+    border: transparent;
+  }
+  
+  ul {
+    display: flex;
+    //to remove
+    display: none;
+  }
+}
