@@ -1,4 +1,4 @@
-@use "./base";
+@use "./base" as *;
 
 nav {
   display: flex;
@@ -9,11 +9,28 @@ nav {
   button {
     background-color: transparent;
     border: transparent;
+
+    @include for-tablets-up {
+      display: none;
+    }
   }
   
   ul {
     display: flex;
-    //to remove
-    display: none;
+    gap: 40px;
+    color: $neutral-600;
+    
+    @include for-phones-only {
+      display: none;
+    }
+
+    li {
+      transition: all 0.3s;
+
+      &:hover, &:active {
+        color: $primary-300;
+      }
+    }
+
   }
 }
