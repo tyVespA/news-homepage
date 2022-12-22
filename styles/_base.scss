@@ -87,6 +87,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: $neutral-100;
   color: $neutral-900;
+  position: relative;
   // font-weights: 400 - 700 - 800
 }
 
@@ -138,6 +139,23 @@ button {
   # HELPER CLASSES
 \*------------------------------------*/
 
+.darkened::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.342);
+}
+
 .hidden {
   display: none;
+}
+
+@include for-phones-only {
+  .mobile-shifted-right {
+    transform: translateX(100%);
+  }
 }
