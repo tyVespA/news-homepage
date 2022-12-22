@@ -20,12 +20,16 @@
         <a href="#" aria-label="Home page">
           <img src="./assets/images/logo.svg" alt="Company's logo">
         </a>
-        <button class="open-mobile-menu">
+
+        <button class="open-mobile-menu" aria-expanded="false" aria-labelledby="menuText">
+          <span id="menuText" hidden>Navigation toggle</span>
           <img src="./assets/images/icon-menu.svg" alt="open menu">
         </button>
+        
         <button class="close-mobile-menu hidden">
           <img src="./assets/images/icon-menu-close.svg" alt="close menu" >
         </button>
+        
         <ul class="nav-links mobile-shifted-right">
           <li><a href="#">Home</a></li>
           <li><a href="#">New</a></li>
