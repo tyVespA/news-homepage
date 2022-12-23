@@ -147,7 +147,6 @@ button {
   bottom: 0;
   left: 0;
   z-index: 1;
-  opacity: 1;
   background-color: rgba(0, 0, 0, 0.342);
 }
 
@@ -155,12 +154,13 @@ button {
   display: none;
 }
 
-.opacity-zero {
-  opacity: 0;
-}
-
 @include for-phones-only {
   .mobile-shifted-right {
-    transform: translateX(100%);
+    transform: translateX(110%);
   }
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }

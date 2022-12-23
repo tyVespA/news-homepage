@@ -9,6 +9,7 @@ openHamburgerBtn.addEventListener("click", () => {
   closeHamburgerBtn.classList.remove("hidden");
   mobileMenu.classList.remove("mobile-shifted-right");
   documentBody.classList.add("darkened");
+  documentBody.classList.add("stop-scrolling");
 
   if(ariaExpandedValue == "true") {
     ariaExpandedValue = "false"
@@ -16,14 +17,15 @@ openHamburgerBtn.addEventListener("click", () => {
     ariaExpandedValue = "true"
   }
   
-  document.querySelector(".open-mobile-menu").setAttribute("aria-expanded", ariaExpandedValue)
+  document.querySelector(".open-mobile-menu").setAttribute("aria-expanded", ariaExpandedValue);
 })
 
 closeHamburgerBtn.addEventListener("click", () => {
   openHamburgerBtn.classList.remove("hidden");
   closeHamburgerBtn.classList.add("hidden");
   mobileMenu.classList.add("mobile-shifted-right");
-  documentBody.classList.remove("darkened")
+  documentBody.classList.remove("darkened");
+  documentBody.classList.remove("stop-scrolling");
 
   if(ariaExpandedValue == "true") {
     ariaExpandedValue = "false"
